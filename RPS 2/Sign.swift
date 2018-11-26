@@ -44,31 +44,31 @@ enum Sign {
         case .rock:
             switch computer {
             case .rock:
-                return GameState.draw
+                return .draw
             case .paper:
-                return GameState.lose
+                return .lose
             case .scissor:
-                return GameState.win
+                return .win
             }
         // PAPER VS ...
         case .paper:
             switch computer {
             case .rock:
-                return GameState.win
+                return .win
             case .paper:
-                return GameState.draw
+                return .draw
             case .scissor:
-                return GameState.lose
+                return .lose
             }
         // SCISSORS VS ...
         case .scissor:
             switch computer {
             case .rock:
-                return GameState.lose
+                return .lose
             case .paper:
-                return GameState.win
+                return .win
             case .scissor:
-                return GameState.draw
+                return .draw
             }
         }
     }

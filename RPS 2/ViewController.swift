@@ -58,16 +58,17 @@ class ViewController: UIViewController {
     func updateUI() {
     
             appSign.text = "🤖"
+            statusOfTheGame.text = "Rock, Paper, Scissors?"
             playAgainButton.isHidden = true
-            
+            view.backgroundColor = .white
             rockButton.isEnabled = true
             rockButton.isHidden = false
             paperButton.isEnabled = true
             paperButton.isHidden = false
             scissorButton.isEnabled = true
             scissorButton.isHidden = false
-        
     }
+    
     
     func playing(player: Sign) {
         rockButton.isEnabled = true
